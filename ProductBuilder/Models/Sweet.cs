@@ -1,10 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Lab5.ProductBuilder.Models
+﻿namespace Lab5.ProductBuilder.Models;
+public abstract class Sweet
 {
-    internal class Sweet
-    {
-    }
+    public string Name { get; set; } = string.Empty;
+    public string Manufacturer { get; set; } = string.Empty;
+    public double Weight { get; set; }
+    public double SugarPer100g { get; set; }
+
+    public abstract string GetInfo();
 }

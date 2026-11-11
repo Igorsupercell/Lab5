@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Lab5.ProductBuilder.Models
+﻿namespace Lab5.ProductBuilder.Models;
+public class WaffleCandy : Sweet
 {
-    internal class WaffleCandy
-    {
-    }
+    public string WaffleType { get; set; } = string.Empty;
+
+    public override string GetInfo() =>
+        $"[Вафля] {Name} | Вес: {Weight}г | Сахар: {SugarPer100g}г | Тип вафли: {WaffleType}";
 }

@@ -1,10 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Lab5.ProductBuilder.Models
+﻿namespace Lab5.ProductBuilder.Models;
+public class ChocolateCandy : Sweet
 {
-    internal class ChocolateCandy
-    {
-    }
+    public string ChocolateType { get; set; } = string.Empty;
+    public bool HasFilling { get; set; }
+
+    public override string GetInfo() =>
+        $"[Шоколад] {Name} | Вес: {Weight}г | Сахар: {SugarPer100g}г | Тип: {ChocolateType} | Начинка: {HasFilling}";
 }
