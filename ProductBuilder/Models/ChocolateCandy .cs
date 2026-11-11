@@ -5,5 +5,5 @@ public class ChocolateCandy : Sweet
     public bool HasFilling { get; set; }
 
     public override string GetInfo() =>
-        $"[Шоколад] {Name} | Вес: {Weight}г | Сахар: {SugarPer100g}г | Тип: {ChocolateType} | Начинка: {HasFilling}";
+        $"[Шоколад] {Name} | Вес: {Weight}г | Сахар: {SugarPer100g}г | Тип: {ChocolateType} | Начинка: {(HasFilling ? "имеется" : "нет")}";
 }
